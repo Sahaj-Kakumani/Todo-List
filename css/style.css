@@ -1,0 +1,60 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background: #5433ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-size: 20px;
+}
+
+.description {
+  text-align: center;
+  font-size: 15px;
+}
+
+.input {
+  border: 0px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.todos {
+  padding: 3px;
+  list-style-type: none;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  color: white;
+}
+
+.todos li {
+  padding: 5px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  text-decoration: line-through;
+}
