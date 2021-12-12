@@ -20,19 +20,16 @@ function addTodo(todo) {
 
     if (todo && todo.completed) {
       todoElement.classList.add("completed");
-      updateLocalStorage();
     }
 
     todoElement.innerText = todoText;
     todoElement.addEventListener("click", (event) => {
       todoElement.classList.toggle("completed");
-      updateLocalStorage();
     });
 
     todoElement.addEventListener("contextmenu", (e) => {
       e.preventDefault();
       todoElement.remove();
-      updateLocalStorage();
     });
 
     todosUL.appendChild(todoElement);
@@ -40,4 +37,3 @@ function addTodo(todo) {
   }
 }
 
-function updateLocalStorage() {}
